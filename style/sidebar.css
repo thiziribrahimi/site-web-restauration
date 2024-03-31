@@ -1,0 +1,138 @@
+/*______________________cart=le sidebar______________________*/
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(12,11,9,1);
+    color: #cda45e;
+    text-transform: uppercase;
+    box-shadow: 0 1px 4px rgba(40,37,37,0.1);
+    padding: 20px;
+    z-index: 100;
+    transition: 0.4s ease;  
+}
+.sidebar-contenu{
+    display: flex;
+    flex-direction: column;
+}
+/*________1side       */
+.sidebar-titre{
+    text-align: center;
+    font-style: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cda45e7a;
+}
+/*_________2side =cartcontent =plusieurscartbox(le food)
+          /*_________cart box___________*/
+          .element{    
+          display: flex;
+          flex-direction: row;
+          margin-top: 20px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #cda45e67;
+          }
+     .element-img{                          /*image=30%*/
+     height: 75px;
+     width: 23%;
+     margin-right: 2%;
+     border-radius: 50%;
+     background-color: #292929;
+     padding: px;
+     }                                   /*les details=50%*/
+    .details{
+    width: 65%;
+    padding-left:10%;
+    display: grid;
+    row-gap: 35px;
+    
+    }
+    .cart-remove{                       /*icon=poubelle=18%*/
+    width: 10%;
+    padding-top: 15%;
+    font-size: 25px;
+    cursor: pointer;
+    padding-right: 2%;
+    }
+/*___________3side =total____________*/
+.total{
+display: flex;
+justify-content: flex-end;
+margin-top: 20px;
+}
+.total-titre{
+    font-style: 15px;
+    font-weight: 600;
+}
+.total-prix{
+    margin-left: 20px;
+    font-weight: 500;
+}
+/*___________4side =button=btnbuy_____________*/
+.sidebar .btn-acheter{
+padding: 10px;
+border: none;
+outline: 0;
+background: transparent;
+border: 2px solid #cda45e;
+color: #cda45e;
+text-transform: uppercase;
+font-size: 12px;
+font-weight: 500;
+cursor:pointer;
+transition: 0.3s ease-in;
+}
+.sidebar .btn-acheter:hover{
+color: #292929;
+background: #cda45e;
+}
+/*___________5 =button=close____________________*/
+#sidebar-fermer{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+/*___________contenu de detail box (d'un produit)*/
+/*__1__le titre produit  */
+.element-titre{
+font-size: 14px;
+font-weight:500 ; 
+}
+/*__2__le prix et amt produit   */
+.element-prix{
+display: flex;
+width: 80%;
+justify-content: space-between;
+}
+.price{
+font-weight: 600;
+}
+.amt{
+font-weight: 600;
+}
+/*_____2__input quantite        */
+.element-quantite{
+background-color: #cda45e;
+color: #292929;
+border: none;
+outline: none;
+width: 40px;
+height: 20px;
+font-size: 15px;
+text-align: center;
+}
+/*_________lors du clique______*/
+.active{
+    right:0;
+}

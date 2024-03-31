@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milkshake</title>
+    <link rel="stylesheet"href="./../style/milks.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"href="../style/sidebar.css">
+</head>
+<body>
+    <section class="food">
+       
+<!------ header section ----->
+
+<header>
+   <h1>Milkshake</h1>
+   <nav>
+      <ul>
+        <li><a href="./../index.html">Acceuil</a></li>
+        <li><a href="./veg.html">Vegétaux</a></li>
+        <li><a href="./nonveg.html">Non Vegétarien</a></li>
+        <li><a href="./Glace.html">Glace</a></li>
+        <li><a href="./jus.html">Jus</a></li>
+        <li><a href="./Dessert.html">Dessert</a></li>
+        <li><a href="./inscription.html">inscription</a></li>
+        <button class="acheter">Acheter<i class="fa fa-cart-arrow-down"></i></button>
+      </ul>
+   </nav>
+
+   <div class="sidebar">
+    <div class="sidebar-titre">Contenu du charriot</div>
+<div class="sidebar-contenu">
+<!--------------changer limage nom ptix*2-->
+    <div class="element">
+        <img src="./../images/imageMilk/milkfraise.jpg" alt=""class="element-img">
+        <div class="details">
+            <div class="element-titre">Milkshake Fraise</div>
+            <div class="element-prix">
+                <div class="price">400 DA</div>
+                <div class="amt">0 DA</div>
+            </div>
+            <input type="number" value="0" class="element-quantite">
+        </div>
+        <i class="fa fa-trash cart-remove"></i>
+    </div>
+
+    <div class="element">
+        <img src="./../images/imageMilk/framboise.jpg" alt=""class="element-img">
+        <div class="details">
+            <div class="element-titre">Milk Framboise</div>
+            <div class="element-prix">
+                <div class="price">600 DA</div>
+                <div class="amt">0 DA</div>
+            </div>
+            <input type="number" value="0" class="element-quantite">
+        </div>
+        <i class="fa fa-trash cart-remove"></i>
+    </div>
+
+    <div class="element">
+        <img src="./../images/imageMilk/banane.jpg" alt=""class="element-img">
+        <div class="details">
+            <div class="element-titre">Milk Banane</div>
+            <div class="element-prix">
+                <div class="price">400 DA</div>
+                <div class="amt">0 DA</div>
+            </div>
+            <input type="number" value="0" class="element-quantite">
+        </div>
+        <i class="fa fa-trash cart-remove"></i>
+    </div>
+
+    <div class="element">
+        <img src="./../images/imageMilk/milkchoco.jpg" alt=""class="element-img">
+        <div class="details">
+            <div class="element-titre">Milk Chocolat</div>
+            <div class="element-prix">
+                <div class="price">600 DA</div>
+                <div class="amt">0 DA</div>
+            </div>
+            <input type="number" value="0" class="element-quantite">
+        </div>
+        <i class="fa fa-trash cart-remove"></i>
+    </div>
+
+    <div class="element">
+        <img src="./../images/imageMilk/fruit rouge.jpg" alt=""class="element-img">
+        <div class="details">
+            <div class="element-titre">Fruit de Bois</div>
+            <div class="element-prix">
+                <div class="price">700 DA</div>
+                <div class="amt">0 DA</div>
+            </div>
+            <input type="number" value="0" class="element-quantite">
+        </div>
+        <i class="fa fa-trash cart-remove"></i>
+    </div>
+
+    <div class="element">
+        <img src="./../images/imageMilk/milkoreo.jpeg" alt=""class="element-img">
+        <div class="details">
+            <div class="element-titre">Milk Oréo</div>
+            <div class="element-prix">
+                <div class="price">500 DA</div>
+                <div class="amt">0 DA</div>
+            </div>
+            <input type="number" value="0" class="element-quantite">
+        </div>
+        <i class="fa fa-trash cart-remove"></i>
+    </div>
+
+    <div class="element">
+        <img src="./../images/imageMilk/mangue.jpg" alt=""class="element-img">
+        <div class="details">
+            <div class="element-titre">Milk Mangue</div>
+            <div class="element-prix">
+                <div class="price">800 DA</div>
+                <div class="amt">0 DA</div>
+            </div>
+            <input type="number" value="0" class="element-quantite">
+        </div>
+        <i class="fa fa-trash cart-remove"></i>
+    </div>
+
+    <div class="element">
+        <img src="./../images/imageMilk/annanas.jpg" alt=""class="element-img">
+        <div class="details">
+            <div class="element-titre">Milk Annana</div>
+            <div class="element-prix">
+                <div class="price">800 DA</div>
+                <div class="amt">0 DA</div>
+            </div>
+            <input type="number" value="0" class="element-quantite">
+        </div>
+        <i class="fa fa-trash cart-remove"></i>
+    </div>
+
+</div>    
+<!------------------calcul---------------------->
+<div class="total">
+    <div class="total-titre">Total</div>
+    <div class="total-prix">0 DA</div>
+</div>
+<a href="./inscription.html"><button  class="btn-acheter">Confimer l'achat</button></a>
+<i class="fa fa-close" id="sidebar-fermer"></i>
+</div>
+
+</header>
+  
+  <!---------Milkshakes-section------->
+
+
+  <div class="conteneur">
+    <div class="boite">
+        <img src="./../images/imageMilk/milkfraise.jpg"class="img"> 
+        <h2 class="food-title">Milkshake Fraise</h2>
+        <h3 class="food-prix">400DA</h3>
+        <button class="add">
+            Ajouter 
+        </button>
+    </div>
+
+    <div class="boite">
+        <img src="./../images/imageMilk/framboise.jpg"class="img"> 
+        <h2 class="food-title">Milk Framboise</h2>
+        <h3 class="food-prix">600DA</h3>
+        <button class="add">
+            Ajouter 
+        </button>
+    </div>
+
+<div class="boite">
+        <img src="./../images/imageMilk/banane.jpg"class="img"> 
+        <h2 class="food-title">Milk Banane</h2>
+        <h3 class="food-prix">400DA</h3>
+        <button class="add">
+            Ajouter 
+        </button>
+    </div>
+
+    <div class="boite">
+        <img src="./../images/imageMilk/milkchoco.jpg"class="img"> 
+        <h2 class="food-title">Milk Chocolat</h2>
+        <h3 class="food-prix">600DA</h3>
+        <button class="add">
+            Ajouter 
+        </button>
+    </div>
+
+    <div class="boite">
+        <img src="./../images/imageMilk/fruit rouge.jpg"class="img"> 
+        <h2 class="food-title">Fruit de bois</h2>
+        <h3 class="food-prix">700DA</h3>
+        <button class="add">
+            Ajouter 
+        </button>
+    </div>
+
+    <div class="boite">
+        <img src="./../images/imageMilk/milkoreo.jpeg"class="img"> 
+        <h2 class="food-title">Milk Oréo</h2>
+        <h3 class="food-prix">500da</h3>
+        <button class="add">
+            ajouter
+            </button>
+    </div>
+
+    <div class="boite">
+        <img src="./../images/imageMilk/mangue.jpg"class="img"> 
+        <h2 class="food-title">Milk Mangue</h2>
+        <h3 class="food-prix">800da</h3>
+        <button class="add">
+            ajouter 
+            </button>
+    </div>
+
+    <div class="boite">
+        <img src="./../images/imageMilk/annanas.jpg"class="img"> 
+        <h2 class="food-title">Milk Annana</h2>
+        <h3 class="food-prix">800da</h3>
+        <button class="add">
+            ajouter
+            </button>
+    </div>
+    </div>
+    </section>
+ <!--javascript menu -->
+ <script src="./../javascript/sidebar.js"> </script>
+</body>
+</html>

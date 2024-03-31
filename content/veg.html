@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+ 
+
+<head>
+
+    <title>Végétariens</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./../style/sidebar.css">
+    <link rel="stylesheet"href="./../style/veg.css">
+
+</head>
+
+<body>
+
+    <section class="veg">
+
+        <header>
+
+            <h1>Végétariens</h1>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="./../index.html">Acceuil</a></li>
+                  <li><a href="./nonveg.html">Non végétarien</a></li>
+                  <li><a href="./Glace.html"> Glace</a></li>
+                  <li><a href="./milks.html">Milkshakes</a></li>
+                  <li><a href="./jus.html">jus</a></li>
+                  <li><a href="./Dessert.html">Desserts</a></li> 
+                  <li><a href="./inscription.html">inscription</a></li>
+
+                    <button class="acheter">Acheter<i class="fa fa-cart-plus" id="cart_icon"></i></button>    
+
+            </ul>
+
+        </nav>
+
+        <div class="sidebar">
+            <div class="sidebar-titre">Contenu du charriot</div>
+<div class="sidebar-contenu">
+        <div class="element">
+
+            <img src="./../images/vegpic/couscous.webp" alt="" class="element-img">
+
+            <div class="details">
+
+                <div class="element-titre">couscous</div>
+
+                <div class="element-prix">
+
+                    <div class="price">1500 DA</div>
+
+                    <div class="amt">0 DA</div>
+
+                </div>
+
+                <input type="number" value="0" class="element-quantite">
+
+            </div>
+
+            <i class="fa fa-trash cart-remove"></i>
+
+
+        </div>
+
+        <div class="element">
+
+            <img src="./../images/vegpic/couscous aux legumes.jpg" alt="" class="element-img">
+
+            <div class="details">
+
+                <div class="element-titre">aforou</div>
+
+                <div class="element-prix">
+
+                    <div class="price">1000 DA</div>
+
+                    <div class="amt">0 DA</div>
+
+                </div>
+
+                <input type="number" value="0" class="element-quantite">
+
+            </div>
+
+            <i class="fa fa-trash cart-remove"></i>
+
+
+        </div>
+
+        <div class="element">
+
+            <img src="./../images/vegpic/berkoukes-kabyle.jpeg" alt="" class="element-img">
+
+            <div class="details">
+
+                <div class="element-titre">berkoukes</div>
+
+                <div class="element-prix">
+
+                    <div class="price">1300 DA</div>
+
+                    <div class="amt">0 DA</div>
+
+                </div>
+
+                <input type="number" value="0" class="element-quantite">
+
+            </div>
+
+            <i class="fa fa-trash cart-remove"></i>
+
+            
+
+        </div>
+
+        <div class="element">
+
+            <img src="./../images/vegpic/doubara.jpeg" alt="" class="element-img">
+
+            <div class="details">
+
+                <div class="element-titre">doubara</div>
+
+                <div class="element-prix">
+
+                    <div class="price">2000 DA</div>
+
+                    <div class="amt">0 DA</div>
+
+                </div>
+
+                <input type="number" value="0" class="element-quantite">
+
+            </div>
+
+            <i class="fa fa-trash cart-remove"></i>
+
+        </div>
+
+        <div class="element">
+
+            <img src="./../images/vegpic/gratinveg.jpg" alt="" class="element-img">
+
+            <div class="details">
+
+                <div class="element-titre">gratin</div>
+
+                <div class="element-prix">
+
+                    <div class="price">1000 DA</div>
+
+                    <div class="amt">0 DA</div>
+
+                </div>
+
+                <input type="number" value="0" class="element-quantite">
+
+            </div>
+
+            <i class="fa fa-trash cart-remove"></i>
+
+            
+
+        </div>
+
+        <div class="element">
+
+            <img src="./../images/vegpic/macedoine.jpeg" alt="" class="element-img">
+
+            <div class="details">
+
+                <div class="element-titre">macedoine</div>
+
+                <div class="prix">
+
+                    <div class="price">1200 DA</div>
+
+                    <div class="amt">0 DA</div>
+
+                </div>
+
+                <input type="number" value="0" class="element-quantite">
+
+            </div>
+
+            <i class="fa fa-trash cart-remove"></i>
+
+
+        </div>
+
+        <div class="element">
+
+            <img src="./../images/vegpic/Salade-de-pates.jpg" alt="" class="element-img">
+
+            <div class="details">
+
+                <div class="element-titre">salade de pates</div>
+
+                <div class="element-prix">
+
+                    <div class="price">1800 DA</div>
+
+                    <div class="amt">0 DA</div>
+
+                </div>
+
+                <input type="number" value="0" class="element-quantite">
+
+            </div>
+
+            <i class="fa fa-trash cart-remove"></i>
+
+            
+
+        </div>
+
+        <div class="element">
+
+            <img src="./../images/vegpic/ratatouile.jpeg" alt="" class="element-img">
+
+            <div class="details">
+
+                <div class="element-titre">ratatouille</div>
+
+                <div class="element-prix">
+
+                    <div class="price">2000 DA</div>
+
+                    <div class="amt">0 DA</div>
+
+                </div>
+
+                <input type="number" value="0" class="element-quantite">
+
+            </div>
+
+            <i class="fa fa-trash cart-remove"></i>
+       </div>
+    </div>    
+    <!------------------calcul---------------------->
+    <div class="total">
+        <div class="total-titre">Total</div>
+        <div class="total-prix">0 DA</div>
+    </div>
+    <a href="./inscription.html"><button  class="btn-acheter">Confimer l'achat</button></a>
+    <i class="fa fa-close" id="sidebar-fermer"></i>
+</div>
+
+</header>
+
+ 
+
+        <div class="conteneur">
+
+            <div class="boite">
+
+                <img src="./../images/vegpic/couscous.webp" class="food_pic">
+
+                <h2 class="food_name">couscous</h2>
+
+                <h3 class="food_price">1500 DA</h3>
+
+                <button class="add">
+
+                    Ajouter
+
+                </button>
+
+            </div>
+
+ 
+
+            <div class="boite">
+
+                <img src="./../images/vegpic/couscous aux legumes.jpg" class="food_pic">
+
+                <h2 class="food_name">Aforou</h2>
+
+                <h3 class="food_price">1000 DA</h3>
+
+                <button class="add">
+
+                    Ajouter
+
+                </button>
+
+            </div>
+
+            <div class="boite">
+
+                <img src="./../images/vegpic/berkoukes-kabyle.jpeg" class="food_pic">
+
+                <h2 class="food_name">Berkoukes</h2>
+
+                <h3 class="food_price">1300 DA</h3>
+
+                <button class="add">
+
+                    Ajouter
+
+                </button>
+
+            </div>
+
+         
+
+            <div class="boite">
+
+                <img src="./../images/vegpic/doubara.jpeg" class="food_pic">
+
+                <h2 class="food_name">Doubara</h2>
+
+                <h3 class="food_price">2000 DA</h3>
+
+                <button class="add">
+
+                    Ajouter
+
+                </button>
+
+            </div>
+
+            <div class="boite">
+
+                <img src="./../images/vegpic/gratinveg.jpg" class="food_pic">
+
+                <h2 class="food_name">GRATIN</h2>
+
+                <h3 class="food_price">1000 DA</h3>
+
+                <button class="add">
+
+                    Ajouter
+
+                </button>
+
+            </div>
+
+            <div class="boite">
+
+                <img src="./../images/vegpic/macedoine.jpeg" class="food_pic">
+
+                <h2 class="food_name">Macedoine</h2>
+
+                <h3 class="food_price">1200 DA</h3>
+
+                <button class="add">
+
+                    Ajouter
+
+                </button>
+
+            </div>
+
+            <div class="boite">
+
+                <img src="./../images/vegpic/Salade-de-pates.jpg" class="food_pic">
+
+                <h2 class="food_name">salade de pates</h2>
+
+                <h3 class="food_price">1800 DA</h3>
+
+                <button class="add">
+
+                    Ajouter
+
+                </button>
+
+            </div>
+
+ 
+
+            <div class="boite">
+
+                <img src="./../images/vegpic/ratatouile.jpeg" class="food_pic">
+
+                <h2 class="food_name">ratatouille</h2>
+
+                <h3 class="food_price">2000 DA</h3>
+
+                <button class="add">
+
+                    Ajouter
+
+                </button>
+
+            </div>
+
+        </header>
+
+    </section>
+
+    <script src="./../javascript/sidebar.js"></script>
+
+</body>
+
+</html>

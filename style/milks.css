@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Dancing+Script&family=Roboto:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.food{
+    min-height: 150vh;
+     background-size: cover;
+     background-attachment: fixed;
+     background-image: url("./../images/imageMilk/bckg1.jpg");
+}
+header{
+    background:rgba(12,11,9,0.6) ;
+    height: 150px;
+    border-bottom: 2px solid rgba(12,11,9,0.6);
+}
+    header h1{
+        color: #fff;
+        letter-spacing: 2px;
+        text-align: center;
+        padding: 30px 0 20px 0;
+        text-transform: uppercase;
+    }
+    header nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    header nav ul {
+        display: flex;
+        
+
+    }
+    header nav ul li {
+        list-style: none;
+        padding: 20px;
+        
+
+    }
+    
+    header nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform:uppercase ;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        transition: 0.4s ease-in ;
+    }
+    header nav ul li a:hover {
+        color:#cda45e ;
+       text-transform: uppercase;
+
+    }
+.acheter{
+   padding: 5px 30px;
+   margin-left: 30px;
+   border: 0;
+   outline: 0;
+   background-color: #cda45e;
+   color: #292929;
+   font-size: 17px;
+   border-radius: 3px;
+   cursor: pointer;
+   transition: 0.4s ease-in;
+}
+.acheter:hover{ 
+        color: #cda45e;
+        background-color: transparent;
+        border: 2px solid #cda45e;
+}
+    .acheter i{
+      margin-left: 10px;  
+}
+    .cart-count{
+        position: absolute;
+        background-color: #cda45e;
+        color:#292929;
+        text-align: center;
+        top: 45px;
+        right:400px;
+        height:30px;
+        width:30px;
+        padding: 3px;
+        line-height:25px;
+        border-radius: 50%;
+        font-weight:600;
+        z-index: 10;
+    }
+    /*-------cart-section------------*/
+    
+
+
+
+    /*--------a partire d'ici-----------*/
+    .conteneur{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-height: 60vh;
+        padding: 50px;
+        margin: 50px;
+        border: 2px #cda45e solid;
+    }
+    .conteneur .boite{
+        height:280px;
+        width:160px;
+        margin: 30px;
+        background:rgba(12,11,9,0.6);
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;
+        border: 2px solid #cda45e;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .conteneur .boite img{
+        height:100px;
+        width:100px;
+        background: #ddd;
+        border-radius: 50%;
+        object-fit: cover;
+        padding: 5px;
+    }
+    .conteneur .boite img:hover{
+        transform: scale(1.2);
+    }
+    .conteneur .boite h2{
+        color:#cda45e;
+        font-size: 17px;
+        font-weight:500;
+        text-transform: uppercase;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    .conteneur .boite h3{
+        color:#fff;
+        font-size: 13px;
+        font-weight:500; 
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    .conteneur .boite .add{
+      padding:5px 10px;
+      margin: 10px;
+       border:2px solid #cda45e;
+      outline: 0;
+      background-color: transparent;
+       color:#cda45e;
+       font-size: 10px;
+    text-transform: uppercase;
+    font-weight:600;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    }
+    .conteneur .boite .add:hover{
+       color:#292929;
+       background-color: #cda45e;
+
+    }
